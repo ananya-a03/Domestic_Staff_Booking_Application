@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    android:scrollbarSize="10dp"
+    android:nestedScrollingEnabled="true"
+    android:scrollbarFadeDuration="10"
+    tools:context=".home.laundary_booking_form">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@xml/bg_dark_view"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-150dp"
+            android:fontFamily="@font/baloo_tammudu"
+            android:text="@string/app_booking"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laundary"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginTop="-40dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="50dp"
+            />
+
+        <EditText
+            android:id="@+id/fullNameET2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/name"
+            android:textColorHint="@color/primary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@drawable/round_background_primary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:inputType="text"
+            android:autofillHints="name" />
+
+        <EditText
+            android:id="@+id/emailET2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/app_email"
+            android:textColorHint="@color/primary"
+            android:background="@drawable/round_background_primary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="emailAddress"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/phoneET2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/app_phone"
+            android:textColorHint="@color/primary"
+            android:background="@drawable/round_background_primary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="phone"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/addressET2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/address"
+            android:textColorHint="@color/primary"
+            android:background="@drawable/round_background_primary"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Address"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="3"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:scrollbarSize="5dp"
+            android:scrollbarStyle="insideInset"
+            />
+        <EditText
+            android:id="@+id/pinCodeET2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/pincode"
+            android:textColorHint="@color/primary"
+            android:background="@drawable/round_background_primary"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Pin Code"
+            android:inputType="textPostalAddress" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+
+            <EditText
+                android:id="@+id/dateET2"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:autofillHints="Date"
+                android:background="@drawable/round_background_primary"
+                android:hint="@string/date"
+                android:inputType="date"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/primary" />
+
+            <EditText
+                android:id="@+id/timeET2"
+                android:layout_width="80dp"
+                android:layout_height="55dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@+id/dateET2"
+                android:autofillHints="time"
+                android:background="@drawable/round_background_primary"
+                android:hint="@string/time"
+                android:inputType="time"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColorHint="@color/primary" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Please enter time in 24hrs format"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you want staffs to pick up drop off laundary?"
+            android:textSize="20sp"
+            android:textColor="@color/primary"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            >
+            <RadioButton android:id="@+id/radioYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:textColor="@color/primary"
+                android:textSize="15sp"
+                />
+
+            <RadioButton android:id="@+id/radioPickUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick UP (extra charges will be applied)"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton android:id="@+id/radioDropOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drop OFF (extra charges will be applied)"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton android:id="@+id/radioNO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:textSize="15sp"
+                android:textColor="@color/primary"
+                />
+        </RadioGroup> -->
+        <Button
+            android:id="@+id/payBtn2"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:text="@string/pay"
+            android:background="@drawable/round_background_btn_primary"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

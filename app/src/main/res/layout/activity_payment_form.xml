@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.payment_form">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@xml/bg_dark_view"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-150dp"
+        android:fontFamily="@font/baloo_tammudu"
+        android:text="@string/payment"
+
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        />
+    <EditText
+        android:id="@+id/cardNameET"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="@string/debit_credit_card"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_background_primary"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <EditText
+        android:id="@+id/nameOnCardET"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="@string/name_on_card"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_background_primary"
+        android:inputType="text"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/CardNoEt"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="@string/card_number"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_background_primary"
+        android:inputType="number"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        >
+    <EditText
+        android:id="@+id/ExpireDateET"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:hint="@string/expiration_date"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_background_primary"
+        android:inputType="date"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    <EditText
+        android:id="@+id/cvvET"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:hint="@string/cvv"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_background_primary"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="@string/rs_2000"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/PaymentButton"
+        android:layout_width="170dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_background_btn_primary"
+        app:backgroundTint="@color/primary"
+        android:text="@string/pay"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+         />
+</LinearLayout>

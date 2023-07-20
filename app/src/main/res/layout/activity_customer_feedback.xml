@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.customer_feedback">
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@xml/bg_dark_view"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:layout_marginStart="0dp"
+
+        android:layout_marginTop="-80dp"
+        android:text="@string/app_feedback"
+        android:textColor="#ffffffff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/baloo_tammudu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/subjectET"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/round_background_primary"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="40dp"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollbars="vertical"
+        android:lines="2"
+        android:minLines="1"
+        android:gravity="top|start"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detailed query:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardcodedText" />
+    <EditText
+        android:id="@+id/detailedQueryET"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/round_background_primary"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="40dp"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:gravity="top|start"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        />
+    <Button
+        android:id="@+id/fbSubmit"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="-20dp"
+        android:text="@string/submit"
+        android:layout_gravity="center"
+        android:background="@drawable/round_background_btn_primary"
+        app:backgroundTint= "@color/primary"
+        android:textAllCaps="true"
+        />
+
+
+</LinearLayout>
